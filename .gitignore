@@ -41,5 +41,5 @@ server/public
 server/.cache
 
 
-gen/
-bin/
+gen/*
+bin/*
