@@ -2,10 +2,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.meloncalculator.MainActivity" >
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
+   <item
+        android:id="@+id/action_calculator"
+        android:orderInCategory="200"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="计算器">
+    </item>
+   <!--  <item
+        android:id="@+id/action_unit_conversions"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="单位转换器">
+    </item> -->
+    <item
+        android:id="@+id/action_temperature_conversion"
+        android:orderInCategory="300"
+      	android:showAsAction="never"
+        android:title="温度转换">
+    </item>
+    <item
+        android:id="@+id/action_area_conversion"
+        android:orderInCategory="300"
+      	android:showAsAction="never"
+        android:title="面积转换">
+    </item>
+    <item
+        android:id="@+id/action_weight_conversion"
+        android:orderInCategory="300"
+      	android:showAsAction="never"
+        android:title="重量转换">
+    </item>
+    <item
+        android:id="@+id/action_length_conversion"
+        android:orderInCategory="300"
+      	android:showAsAction="never"
+        android:title="长度转换">
+    </item>
 
 </menu>
