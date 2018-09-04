@@ -3,6 +3,8 @@
     <string-array name="measure_array">
         <item>长度</item>
         <item>重量</item>
+        <item>面积</item>
+        <item>温度</item>
     </string-array>
     <string-array name="length_unit_array">
         <item>千米-米</item>
@@ -13,6 +15,18 @@
     </string-array>    
     <string-array name="weight_unit_array">
         <item>千克-英镑</item>
-        <item>千克-盎司</item>               
-    </string-array>      
+        <item>千克-盎司</item> 
+        <item>英石-千克</item>               
+    </string-array>  
+    <string-array name="area_unit_array">
+        <item>平方米-平方英尺</item>
+        <item>平方米-平方码</item>  
+        <item>英亩-平方米</item>              
+    </string-array>
+   	<string-array name="temperature_unit_array">
+        <item>摄氏度-华氏度</item>  
+        <item>摄氏度-开尔文</item>  
+        <item>华氏度-开尔文</item>             
+    </string-array>
+          
 </resources>

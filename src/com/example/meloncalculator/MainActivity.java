@@ -1,6 +1,5 @@
 package com.example.meloncalculator;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,7 +20,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 		bindWidgets();
 	}
-
 	/**
 	 * °ó¶¨ÔªËØ
 	 */
@@ -30,7 +28,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		covertButton = (Button) findViewById(R.id.button2);
 		calcButton.setOnClickListener(this);
 		covertButton.setOnClickListener(this);
-
 	}
 
 	@Override
@@ -59,7 +56,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				
 				break;
 			case R.id.button2:
-				Log.i("SKL", "121");
+				Log.i(TAG, "121");
 				Intent myIntent = new Intent();
 				myIntent.setClass(MainActivity.this, AreaConversion.class);
 				startActivity(myIntent);

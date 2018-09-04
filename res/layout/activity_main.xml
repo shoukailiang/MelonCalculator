@@ -24,6 +24,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="64dp"
-        android:text="转换" />
+        android:text="单位转换" />
+    
 
 </RelativeLayout>

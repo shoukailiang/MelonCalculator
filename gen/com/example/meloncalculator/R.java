@@ -9,8 +9,10 @@ package com.example.meloncalculator;
 
 public final class R {
     public static final class array {
+        public static final int area_unit_array=0x7f040003;
         public static final int length_unit_array=0x7f040001;
         public static final int measure_array=0x7f040000;
+        public static final int temperature_unit_array=0x7f040004;
         public static final int weight_unit_array=0x7f040002;
     }
     public static final class attr {
@@ -33,12 +35,10 @@ public final class R {
         public static final int logo=0x7f020001;
     }
     public static final class id {
-        public static final int action_area_conversion=0x7f09000d;
+        public static final int about_us=0x7f09000d;
         public static final int action_calculator=0x7f09000b;
-        public static final int action_length_conversion=0x7f09000f;
         public static final int action_settings=0x7f09000a;
-        public static final int action_temperature_conversion=0x7f09000c;
-        public static final int action_weight_conversion=0x7f09000e;
+        public static final int action_unit_conversions=0x7f09000c;
         public static final int button1=0x7f090008;
         public static final int button2=0x7f090009;
         public static final int input=0x7f090002;
