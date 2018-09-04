@@ -3,6 +3,9 @@ package com.example.meloncalculator;
 import java.util.Arrays;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.text.Editable;
@@ -230,6 +233,30 @@ public class AreaConversion extends Activity implements OnItemSelectedListener {
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
 		// TODO Auto-generated method stub
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.area_conversion, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+//		  switch(id){
+//  			case R.id.action_unit_conversions:       //菜单项“单位转换”
+//  				Intent myIntent = new Intent();
+//				myIntent.setClass(AreaConversion.this, AreaConversion.class);
+//				startActivity(myIntent);
+//				break;
+//		  }
+
+		return super.onOptionsItemSelected(item);
 	}
 
 //	@Override

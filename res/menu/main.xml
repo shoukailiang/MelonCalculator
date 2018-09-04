@@ -2,23 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.meloncalculator.MainActivity" >
 
-   <item
-        android:id="@+id/action_calculator"
-        android:orderInCategory="200"
-        android:showAsAction="never"
-        android:title="计算器">
-    </item>
-   	<item
-        android:id="@+id/action_unit_conversions"
-        android:orderInCategory="300"
-        android:showAsAction="never"
-        android:title="单位转换器">
-    </item> 
     <item
         android:id="@+id/about_us"
         android:orderInCategory="300"
         android:showAsAction="never"
         android:title="关于我们">
+    </item> 
+     <item
+        android:id="@+id/back_blue"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="更换蓝色背景">
+    </item> 
+     <item
+        android:id="@+id/back_white"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="更换白色背景">
     </item> 
 
 </menu>

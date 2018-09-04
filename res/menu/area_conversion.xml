@@ -3,9 +3,10 @@
     tools:context="com.example.meloncalculator.AreaConversion" >
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:id="@+id/action_calculator"
+        android:orderInCategory="200"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="计算器">
+    </item>
 
 </menu>

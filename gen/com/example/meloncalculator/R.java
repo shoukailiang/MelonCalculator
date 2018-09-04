@@ -35,16 +35,17 @@ public final class R {
         public static final int logo=0x7f020001;
     }
     public static final class id {
-        public static final int about_us=0x7f09000d;
+        public static final int about_us=0x7f09000c;
         public static final int action_calculator=0x7f09000b;
-        public static final int action_settings=0x7f09000a;
-        public static final int action_unit_conversions=0x7f09000c;
-        public static final int button1=0x7f090008;
-        public static final int button2=0x7f090009;
+        public static final int back_blue=0x7f09000d;
+        public static final int back_white=0x7f09000e;
+        public static final int button1=0x7f090009;
+        public static final int button2=0x7f09000a;
         public static final int input=0x7f090002;
         public static final int input_edittext=0x7f090003;
         public static final int input_unit=0x7f090004;
         public static final int measure=0x7f090000;
+        public static final int relative_layout1=0x7f090008;
         public static final int result=0x7f090005;
         public static final int result_text=0x7f090006;
         public static final int result_unit=0x7f090007;
@@ -68,11 +69,13 @@ public final class R {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -87,9 +90,12 @@ public final class R {
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
+        /**  我是默认的 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int HoleTheme=0x7f070003;
+        /**  黑色主题  
+         */
+        public static final int blackTheme=0x7f070002;
     }
 }
