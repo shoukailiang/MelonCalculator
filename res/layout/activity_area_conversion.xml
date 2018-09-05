@@ -8,22 +8,56 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.meloncalculator.AreaConversion" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="33dp"
-        android:text="TextView" />
-
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="22dp" />
-
+    <Spinner 
+        android:id="@+id/measure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        />
+    <Spinner 
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_below="@id/measure"/>
+    <LinearLayout 
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:orientation="horizontal"
+        android:layout_below="@id/unit">
+	      <EditText
+	        android:id="@+id/input_edittext"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/item_height"
+	        android:layout_weight="6"
+	        android:inputType="numberDecimal"
+	        android:hint="0.0"
+	        android:textSize="@dimen/general_font"/>   
+	     <TextView
+	        android:id="@+id/input_unit"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/item_height"
+	        android:layout_weight="1"
+	        android:textSize="@dimen/unit_font"/>          
+    </LinearLayout>
+  	<LinearLayout 
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:orientation="horizontal"
+        android:layout_below="@id/input">
+		<TextView
+		   android:id="@+id/result_text"
+		   android:layout_width="0dp"
+		   android:layout_height="@dimen/item_height"
+		   android:layout_weight="6"
+		   android:text="0.0"
+		   android:textSize="@dimen/general_font"/>    
+		<TextView
+		   android:id="@+id/result_unit"
+		   android:layout_width="0dp"
+		   android:layout_height="@dimen/item_height"
+		   android:layout_weight="1"
+		   android:textSize="@dimen/unit_font"/> 		   	    
+  	</LinearLayout>   
+       
 </RelativeLayout>
