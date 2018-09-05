@@ -3,7 +3,13 @@
     <string name="app_name">瓜皮计算器</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
+    <string name="title_activity_area_conversion">AreaConversion</string>
+    <string name="title_Calculator">Calculator</string>
+
+=======
     <string name="title_activity_area_conversion">单位转换器</string>
     <string name="calculator">计算器</string>
     <string name="unit_conversion">单位转换</string>
+>>>>>>> a1cf8ff3f6f1b26a630945ee7ed29524072d20bf
 </resources>
