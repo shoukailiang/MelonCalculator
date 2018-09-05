@@ -60,9 +60,12 @@ public final class R {
         public static final int main=0x7f080001;
     }
     public static final class string {
+        public static final int about_us=0x7f060006;
         public static final int action_settings=0x7f060002;
         public static final int app_name=0x7f060000;
         public static final int calculator=0x7f060004;
+        public static final int change_blue=0x7f060007;
+        public static final int change_white=0x7f060008;
         public static final int hello_world=0x7f060001;
         public static final int title_activity_area_conversion=0x7f060003;
         public static final int unit_conversion=0x7f060005;

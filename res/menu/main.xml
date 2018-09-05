@@ -6,19 +6,19 @@
         android:id="@+id/about_us"
         android:orderInCategory="300"
         android:showAsAction="never"
-        android:title="关于我们">
+        android:title="@string/about_us">
     </item> 
      <item
         android:id="@+id/back_blue"
         android:orderInCategory="300"
         android:showAsAction="never"
-        android:title="更换蓝色背景">
+        android:title="@string/change_blue">
     </item> 
      <item
         android:id="@+id/back_white"
         android:orderInCategory="300"
         android:showAsAction="never"
-        android:title="更换白色背景">
+        android:title="@string/change_white">
     </item> 
 
 </menu>

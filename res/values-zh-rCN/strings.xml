@@ -4,4 +4,7 @@
     <string name="title_activity_area_conversion">单位转换器</string>
     <string name="calculator">计算器</string>
     <string name="unit_conversion">单位转换</string>
+    <string name="about_us">关于我们</string>
+    <string name="change_blue">更换蓝色背景</string>
+    <string name="change_white">更换白色背景</string>
 </resources>

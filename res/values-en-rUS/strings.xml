@@ -4,4 +4,7 @@
     <string name="title_activity_area_conversion">unitConversion</string>
     <string name="calculator">Calulator</string>
     <string name="unit_conversion">unitConversion</string>
+     <string name="about_us">about_us</string>
+     <string name="change_blue">change_blue</string>
+    <string name="change_white">change_white</string>
 </resources>
