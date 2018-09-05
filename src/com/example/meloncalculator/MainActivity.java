@@ -56,16 +56,17 @@ public class MainActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 		// Ìø×ª
 			case R.id.button1:
-				Log.i("YQK", "calcu");
-				Intent calcuIntent = new Intent();
-				calcuIntent.setClass(MainActivity.this, Calculator.class);
-				startActivity(calcuIntent);
+				Log.i("YQK", "calculator");
+				Intent CalIntent = new Intent();
+				CalIntent.setClass(MainActivity.this, Calculator.class);
+				startActivity(CalIntent);
 				break;
+				
 			case R.id.button2:
 				Log.i("SKL", "121");
-				//Intent myIntent = new Intent();
-				//myIntent.setClass(MainActivity.this, AreaConversion.class);
-				//startActivity(myIntent);
+				Intent myIntent = new Intent();
+				myIntent.setClass(MainActivity.this, AreaConversion.class);
+				startActivity(myIntent);
 				break;
 			default:
 				break;
