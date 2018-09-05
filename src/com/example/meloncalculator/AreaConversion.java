@@ -69,51 +69,108 @@ public class AreaConversion extends Activity implements OnItemSelectedListener {
 					inputUnit.setText("千米");
 					resultUnit.setText("米");
 					rate = 1000;	
-				} else if (unit_covert.equals("米-码")) {
+				}else if (unit_covert.equals("km-m")) {
+					inputUnit.setText("km");
+					resultUnit.setText("m");
+					rate = 1000;	
+				}else if (unit_covert.equals("米-码")) {
 					inputUnit.setText("米");
 					resultUnit.setText("码");
+					rate = 1.094;
+				}else if (unit_covert.equals("m-yard")) {
+					inputUnit.setText("m");
+					resultUnit.setText("yard");
 					rate = 1.094;
 				} else if (unit_covert.equals("米-英尺")) {
 					inputUnit.setText("米");
 					resultUnit.setText("英尺");
 					rate = 3.281;
+				} else if (unit_covert.equals("m-foot")) {
+					inputUnit.setText("m");
+					resultUnit.setText("foot");
+					rate = 3.281;
 				} else if (unit_covert.equals("厘米-英尺")) {
 					inputUnit.setText("厘米");
 					resultUnit.setText("英尺");
 					rate = 0.394;
-				} else if (unit_covert.equals("千克-英镑")) {
+				} else if (unit_covert.equals("cm-foot")) {
+					inputUnit.setText("cm");
+					resultUnit.setText("foot");
+					rate = 0.394;
+				}  else if (unit_covert.equals("千克-英镑")) {
 					inputUnit.setText("千克");
 					resultUnit.setText("英镑");
 					rate = 2.205;
-				} else if (unit_covert.equals("千克-盎司")) {
+				} else if (unit_covert.equals("kg-pound")) {
+					inputUnit.setText("kg");
+					resultUnit.setText("pound");
+					rate = 2.205;
+				}  else if (unit_covert.equals("千克-盎司")) {
 					inputUnit.setText("千克");
 					resultUnit.setText("盎司");
+					rate = 35.274;
+				} else if (unit_covert.equals("kg-ounce")) {
+					inputUnit.setText("kg");
+					resultUnit.setText("ounce");
 					rate = 35.274;
 				} else if (unit_covert.equals("英石-千克")) {
 					inputUnit.setText("英石");
 					resultUnit.setText("千克");
 					rate = 6.350;
-				} else if (unit_covert.equals("海里-公里")) {
+				} else if (unit_covert.equals("stone-kg")) {
+					inputUnit.setText("stone");
+					resultUnit.setText("kg");
+					rate = 6.350;
+				}  else if (unit_covert.equals("海里-公里")) {
 					inputUnit.setText("海里");
 					resultUnit.setText("公里");
 					rate = 1.852;
-				}else if (unit_covert.equals("平方米-平方英尺")) {
+				} else if (unit_covert.equals("sea mile-kilometre")) {
+					inputUnit.setText("sea mile");
+					resultUnit.setText("kilometre");
+					rate = 1.852;
+				} else if (unit_covert.equals("平方米-平方英尺")) {
 					inputUnit.setText("平方米");
 					resultUnit.setText("平方英尺");
 					rate = 10.764;
-				}else if (unit_covert.equals("平方米-平方码")) {
+				}else if (unit_covert.equals("square meter-square foot")) {
+					inputUnit.setText("square meter");
+					resultUnit.setText("square foot");
+					rate = 10.764;
+				} else if (unit_covert.equals("平方米-平方码")) {
 					inputUnit.setText("平方米");
 					resultUnit.setText("平方码");
 					rate = 1.196;
-				}else if (unit_covert.equals("摄氏度-华氏度")) {
+				}else if (unit_covert.equals("square meter-square yard")) {
+					inputUnit.setText("square meter");
+					resultUnit.setText("square yard");
+					rate = 1.196;
+				}else if (unit_covert.equals("英亩-平方米")) {
+					inputUnit.setText("英亩");
+					resultUnit.setText("平方米");
+					rate = 4046.856;
+				}else if (unit_covert.equals("acre-square meter")) {
+					inputUnit.setText("acre");
+					resultUnit.setText("square meter");
+					rate = 4046.856;
+				} else if (unit_covert.equals("摄氏度-华氏度")) {
 					inputUnit.setText("摄氏度");
 					resultUnit.setText("华氏度");
-				}else if (unit_covert.equals("摄氏度-开尔文")) {
+				} else if (unit_covert.equals("centigrade-fahrenheit")) {
+					inputUnit.setText("centigrade");
+					resultUnit.setText("fahrenheit");
+				} else if (unit_covert.equals("摄氏度-开尔文")) {
 					inputUnit.setText("摄氏度");
 					resultUnit.setText("开尔文");
-				}else if (unit_covert.equals("华氏度-开尔文")) {
+				} else if (unit_covert.equals("centigrade-kelvin")) {
+					inputUnit.setText("centigrade");
+					resultUnit.setText("kelvin");
+				} else if (unit_covert.equals("华氏度-开尔文")) {
 					inputUnit.setText("华氏度");
 					resultUnit.setText("开尔文");
+				}else if (unit_covert.equals("fahrenheit-kelvin")) {
+					inputUnit.setText("fahrenheit");
+					resultUnit.setText("kelvin");
 				}
 			}
 
@@ -137,7 +194,7 @@ public class AreaConversion extends Activity implements OnItemSelectedListener {
 				// 结果的单位
 				resultUnit = (TextView) findViewById(R.id.result_unit);
 				String resultUnitValue = (String) resultUnit.getText();
-				String nameString[]={"华氏度","摄氏度","开尔文"};
+				String nameString[]={"华氏度","摄氏度","开尔文","centigrade","fahrenheit","kelvin"};
 				if (input_str != null && !input_str.equals("")) {
 					Log.i("SKL", ""+inputUnit);
 					// 判断是不是温度
@@ -149,10 +206,19 @@ public class AreaConversion extends Activity implements OnItemSelectedListener {
 						if(inputUnitValue.equals("摄氏度")&&resultUnitValue.equals("华氏度")){
 							Double a = Double.parseDouble(input_str) * 1.8 +32;
 							result.setText("" + a );
+						}else if(inputUnitValue.equals("centigrade")&&resultUnitValue.equals("fahrenheit")){
+							Double a = Double.parseDouble(input_str) * 1.8 +32;
+							result.setText("" + a );
 						}else if(inputUnitValue.equals("摄氏度")&&resultUnitValue.equals("开尔文")){
 							Double a = Double.parseDouble(input_str) + 273.15;
 							result.setText("" + a );
+						}else if(inputUnitValue.equals("centigrade")&&resultUnitValue.equals("kelvin")){
+							Double a = Double.parseDouble(input_str) + 273.15;
+							result.setText("" + a );
 						}else if(inputUnitValue.equals("华氏度")&&resultUnitValue.equals("开尔文")){
+							Double a = (Double.parseDouble(input_str) -306.6)/1.8;
+							result.setText("" + a );
+						}else if(inputUnitValue.equals("fahrenheit")&&resultUnitValue.equals("kelvin")){
 							Double a = (Double.parseDouble(input_str) -306.6)/1.8;
 							result.setText("" + a );
 						}

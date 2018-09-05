@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="measure_array">
+        <item>length</item>
+        <item>weight</item>
+        <item>area</item>
+        <item>temperature</item>
+    </string-array>
+    <string-array name="length_unit_array">
+        <item>km-m</item>
+        <item>m-yard</item>
+        <item>m-foot</item>
+        <item>cm-foot</item>   
+        <item>sea mile-kilometre</item>                
+    </string-array>    
+    <string-array name="weight_unit_array">
+        <item>kg-pound</item>
+        <item>kg-ounce</item> 
+        <item>stone-kg</item>               
+    </string-array>  
+    <string-array name="area_unit_array">
+        <item>square meter-square foot</item>
+        <item>square meter-square yard</item>  
+        <item>acre-square meter</item>              
+    </string-array>
+   	<string-array name="temperature_unit_array">
+        <item>centigrade-fahrenheit</item>  
+        <item>centigrade-kelvin</item>  
+        <item>fahrenheit-kelvin</item>             
+    </string-array> 
+</resources>

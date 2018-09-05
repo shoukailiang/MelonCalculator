@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">瓜皮计算器</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
     <string name="title_activity_area_conversion">单位转换器</string>
     <string name="calculator">计算器</string>
     <string name="unit_conversion">单位转换</string>
