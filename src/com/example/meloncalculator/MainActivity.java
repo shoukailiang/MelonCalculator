@@ -78,15 +78,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 			// Ìø×ª
 			case R.id.button1:
-<<<<<<< HEAD
-				Log.i("YQK", "calculator");
-				Intent CalIntent = new Intent();
-				CalIntent.setClass(MainActivity.this, Calculator.class);
-				startActivity(CalIntent);
-=======
 				
-				
->>>>>>> a1cf8ff3f6f1b26a630945ee7ed29524072d20bf
 				break;
 				
 			case R.id.button2:
