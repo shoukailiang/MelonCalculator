@@ -6,7 +6,13 @@
         android:id="@+id/action_calculator"
         android:orderInCategory="200"
         android:showAsAction="never"
-        android:title="计算器">
+        android:title="@string/calculator">
     </item>
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/exit">
+    </item> 
 
 </menu>

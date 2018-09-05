@@ -314,13 +314,17 @@ public class AreaConversion extends Activity implements OnItemSelectedListener {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-//		  switch(id){
-//  			case R.id.action_unit_conversions:       //菜单项“单位转换”
-//  				Intent myIntent = new Intent();
-//				myIntent.setClass(AreaConversion.this, AreaConversion.class);
-//				startActivity(myIntent);
-//				break;
-//		  }
+		  switch(id){
+  			case R.id.action_calculator:       //菜单项“单位转换”
+  				Intent myIntent = new Intent();
+				myIntent.setClass(AreaConversion.this, Calculator.class);
+				startActivity(myIntent);
+				break;
+  			 case R.id.exit:       //菜单项“退出”
+ 	    	    
+ 				finish();
+ 				break;
+		  }
 
 		return super.onOptionsItemSelected(item);
 	}

@@ -64,8 +64,12 @@ public class MainActivity extends Activity implements OnClickListener {
 				mainLayout.setBackgroundColor(Color.BLUE);
 				break;
 	        case R.id.back_white:       //菜单项“关于我们”
-	        	
+	    
 				mainLayout.setBackgroundColor(Color.WHITE);
+				break;
+	        case R.id.exit:       //菜单项“退出”
+	    	    
+				finish();
 				break;
 		  }
 
@@ -78,7 +82,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 			// 跳转
 			case R.id.button1:
-				
+				Intent myIntent0 = new Intent();
+				myIntent0.setClass(MainActivity.this, Calculator.class);
+				startActivity(myIntent0);
 				break;
 				
 			case R.id.button2:

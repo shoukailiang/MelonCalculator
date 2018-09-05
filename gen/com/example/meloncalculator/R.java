@@ -35,25 +35,53 @@ public final class R {
         public static final int logo=0x7f020001;
     }
     public static final class id {
-        public static final int about_us=0x7f09000c;
-        public static final int action_calculator=0x7f09000b;
-        public static final int back_blue=0x7f09000d;
-        public static final int back_white=0x7f09000e;
+        public static final int AC=0x7f09000d;
+        public static final int DEL=0x7f09000e;
+        public static final int Result=0x7f09000b;
+        public static final int about_us=0x7f090027;
+        public static final int action_calculator=0x7f090024;
+        public static final int action_unit_conversion=0x7f090026;
+        public static final int add=0x7f09001a;
+        public static final int back_blue=0x7f090028;
+        public static final int back_white=0x7f090029;
         public static final int button1=0x7f090009;
         public static final int button2=0x7f09000a;
+        public static final int divide=0x7f090010;
+        public static final int dot=0x7f090022;
+        public static final int eight=0x7f090013;
+        public static final int equal=0x7f090023;
+        public static final int exit=0x7f090025;
+        public static final int five=0x7f090018;
+        public static final int four=0x7f090017;
         public static final int input=0x7f090002;
         public static final int input_edittext=0x7f090003;
         public static final int input_unit=0x7f090004;
         public static final int measure=0x7f090000;
+        public static final int multiply=0x7f090015;
+        public static final int nine=0x7f090014;
+        public static final int one=0x7f09001c;
+        public static final int per=0x7f09000f;
         public static final int relative_layout1=0x7f090008;
         public static final int result=0x7f090005;
         public static final int result_text=0x7f090006;
         public static final int result_unit=0x7f090007;
+        public static final int seven=0x7f090012;
+        public static final int six=0x7f090019;
+        public static final int substract=0x7f09001f;
+        public static final int tableRow1=0x7f09000c;
+        public static final int tableRow2=0x7f090011;
+        public static final int tableRow3=0x7f090016;
+        public static final int tableRow4=0x7f09001b;
+        public static final int tableRow5=0x7f090020;
+        public static final int three=0x7f09001e;
+        public static final int two=0x7f09001d;
         public static final int unit=0x7f090001;
+        public static final int zero=0x7f090021;
     }
     public static final class layout {
         public static final int activity_area_conversion=0x7f030000;
         public static final int activity_main=0x7f030001;
+        public static final int calculator=0x7f030002;
     }
     public static final class menu {
         public static final int area_conversion=0x7f080000;
@@ -67,6 +95,7 @@ public final class R {
         public static final int calculator=0x7f060005;
         public static final int change_blue=0x7f060008;
         public static final int change_white=0x7f060009;
+        public static final int exit=0x7f06000a;
         public static final int hello_world=0x7f060001;
         public static final int title_Calculator=0x7f060003;
         public static final int title_activity_area_conversion=0x7f060004;
