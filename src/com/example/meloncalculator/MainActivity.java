@@ -55,7 +55,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	        	// 弹框
 	        	 AlertDialog.Builder builder  = new Builder(MainActivity.this);
 	        	 builder.setTitle("关于我们") ;
-	        	 builder.setMessage("寿恺梁(单位转换，弹框),袁其凯(计算器)") ;
+	        	 builder.setMessage("寿恺梁(单位转换，弹框,中英文),袁其凯(计算器)") ;
 	        	 builder.setPositiveButton("是" ,  null );
 	        	 builder.show(); 
 				break;

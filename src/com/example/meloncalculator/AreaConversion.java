@@ -253,8 +253,10 @@ public class AreaConversion extends Activity implements OnItemSelectedListener {
 	public void onItemSelected(AdapterView<?> parent, View view, int pos,
 			long id) {
 		// TODO Auto-generated method stub
+		Log.i(TAG, ""+pos);
 		switch (pos) {
 		// 根据选择的不同类型，渲染出util 的不同单位
+		
 		case 0: {
 			unitAdapter = ArrayAdapter.createFromResource(this,
 					R.array.length_unit_array,
@@ -281,6 +283,7 @@ public class AreaConversion extends Activity implements OnItemSelectedListener {
 			unitAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 			unitSpinner.setAdapter(unitAdapter);
 		}
+		break;
 		case 3: {
 			unitAdapter = ArrayAdapter.createFromResource(this,
 					R.array.temperature_unit_array,
